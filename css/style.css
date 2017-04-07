@@ -9869,3 +9869,11 @@ span.customSelect.changed {
     background:url(../img/customSelect-arrow.gif) no-repeat center right;
 
 }
+
+.breadcrumb {
+	background-color: #FFFFFF;
+}
+
+.form-inline .form-control {
+	width: 100%;
+}

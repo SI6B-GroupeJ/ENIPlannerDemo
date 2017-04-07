@@ -34,44 +34,44 @@
                     <li id="alert_notificatoin_bar" class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <i class="icon-bell-l"></i>
-                            <span class="badge bg-important">7</span>
+                            <span class="badge bg-important">1</span>
                         </a>
                         <ul class="dropdown-menu extended notification">
                             <div class="notify-arrow notify-arrow-blue"></div>
                             <li>
-                                <p class="blue">You have 4 new notifications</p>
+                                <p class="blue">Vous avez 1 nouvelle notification</p>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <span class="label label-primary"><i class="icon_profile"></i></span> 
-                                    Friend Request
-                                    <span class="small italic pull-right">5 mins</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="label label-warning"><i class="icon_pin"></i></span>  
-                                    John location.
-                                    <span class="small italic pull-right">50 mins</span>
-                                </a>
-                            </li>
+                            <!-- <li> -->
+                                <!-- <a href="#"> -->
+                                    <!-- <span class="label label-primary"><i class="icon_profile"></i></span>  -->
+                                    <!-- Friend Request -->
+                                    <!-- <span class="small italic pull-right">5 mins</span> -->
+                                <!-- </a> -->
+                            <!-- </li> -->
+                            <!-- <li> -->
+                                <!-- <a href="#"> -->
+                                    <!-- <span class="label label-warning"><i class="icon_pin"></i></span>   -->
+                                    <!-- John location. -->
+                                    <!-- <span class="small italic pull-right">50 mins</span> -->
+                                <!-- </a> -->
+                            <!-- </li> -->
                             <li>
                                 <a href="#">
                                     <span class="label label-danger"><i class="icon_book_alt"></i></span> 
-                                    Project 3 Completed.
-                                    <span class="small italic pull-right">1 hr</span>
+                                    Calendriers validés
+                                    <span class="small italic pull-right">5</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <span class="label label-success"><i class="icon_like"></i></span> 
-                                    Mick appreciated your work.
-                                    <span class="small italic pull-right"> Today</span>
-                                </a>
-                            </li>                            
-                            <li>
-                                <a href="#">See all notifications</a>
-                            </li>
+                            <!-- <li> -->
+                                <!-- <a href="#"> -->
+                                    <!-- <span class="label label-success"><i class="icon_like"></i></span>  -->
+                                    <!-- Mick appreciated your work. -->
+                                    <!-- <span class="small italic pull-right"> Today</span> -->
+                                <!-- </a> -->
+                            <!-- </li>                             -->
+                            <!-- <li> -->
+                                <!-- <a href="#">See all notifications</a> -->
+                            <!-- </li> -->
                         </ul>
                     </li>
                     <!-- DEBUT NOTIFICATION UTILISATEUR  -->
@@ -83,10 +83,13 @@
                         <ul class="dropdown-menu extended logout">
                             <div class="log-arrow-up"></div>
                             <li>
-                                <a href="login.html"><i class="icon_key_alt"></i> Log Out</a>
+                                <a href="profil.html">PROFIL</a>
                             </li>
                             <li>
-                                <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
+                                <a href="#">DOCUMENTATION</a>
+                            </li>
+                            <li>
+                                <a href="login.html">Deconnexion</a>
                             </li>
                         </ul>
                     </li>
@@ -126,6 +129,7 @@
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">
+						  <li><a class="" href="GestionEnchainementModules.html">Enchaînement modules</a></li>
                           <li><a class="" href="Purge.html">Purge</a></li>
                           <li><a class="" href="Historisation.html">Historisation</a></li>
                       </ul>
@@ -152,7 +156,7 @@
 
          <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12">
                 <button type="submit" class="btn btn-success">Rechercher</button> 
-                <div><br><br></div>
+                <div><br></div>
         </div>
 
     </form>
@@ -166,8 +170,10 @@
           			<th>Entreprise</th>
                 <th>Lieu</th>
           			<th>Formation</th>
-          			<th>Date début</th>
-          			<th>Date fin</th>
+          			<th>Date début contrat</th>
+          			<th>Date fin contrat</th>
+					<th>Date début formation</th>
+          			<th>Date fin formation</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -179,6 +185,8 @@
                 <td>Non défini</td>
         				<td>CDI</td>
         				<td>01/09/2016</td>
+        				<td>10/10/2017</td>
+						<td>01/09/2016</td>
         				<td>10/10/2017</td>
                 <td>
 					<a class="btn btn-primary" data-toggle="modal" data-target="#imagemodal"><i class="glyphicon glyphicon-search"></i></a>
@@ -196,6 +204,8 @@
 				<td>ASR</td>
 				<td>01/09/2017</td>
 				<td>10/10/2018</td>
+				<td>01/09/2017</td>
+				<td>10/10/2018</td>
                 <td>
 				  <a class="btn btn-primary" data-toggle="modal" data-target="#imagemodal"><i class="glyphicon glyphicon-search"></i></a>
                   <div class="btn-group">
@@ -210,6 +220,8 @@
 				<td>Non défini</td>
         <td>Rennes</td>
 				<td>CDI</td>
+				<td>01/09/2016</td>
+				<td>10/10/2017</td>
 				<td>01/09/2016</td>
 				<td>10/10/2017</td>
                 <td>
