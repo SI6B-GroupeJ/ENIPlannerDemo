@@ -6,12 +6,14 @@
 
     <title>ENI - ENIPlanner</title>
 
-    <link href="../css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../css/bootstrap.css" rel="stylesheet"/>
     <link href="../css/bootstrap-theme.css" rel="stylesheet"/>
     <link href="../css/elegant-icons-style.css" rel="stylesheet" /> 
     <link href="../css/style.css" rel="stylesheet"/>
     <link href="../css/style-responsive.css" rel="stylesheet" />
     <link href="../css/jquery-ui-1.10.4.min.css" rel="stylesheet"/>
+	
+	<link href="../css/stylePerso.css" rel="stylesheet"/>
 
   </head>
 
@@ -21,10 +23,9 @@
 <!-- DEBUT ENTETE-->   
       <!-- LOGO EN HAUT A GAUCHE-->
       <header class="header dark-bg">
+			<img id="logo" src="../img/eni.png" width="50" height="50">
             <div class="toggle-nav">
-              <img src="../img/eni.png" width="50" height="50">
                 <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
-                <div ></br></div>
             </div>
             <!-- TITRE-->
             <a href="index.html" class="logo">ENI <span class="lite">Planner</span></a>
@@ -41,20 +42,6 @@
                             <li>
                                 <p class="blue">Vous avez 1 nouvelle notification</p>
                             </li>
-                            <!-- <li> -->
-                                <!-- <a href="#"> -->
-                                    <!-- <span class="label label-primary"><i class="icon_profile"></i></span>  -->
-                                    <!-- Friend Request -->
-                                    <!-- <span class="small italic pull-right">5 mins</span> -->
-                                <!-- </a> -->
-                            <!-- </li> -->
-                            <!-- <li> -->
-                                <!-- <a href="#"> -->
-                                    <!-- <span class="label label-warning"><i class="icon_pin"></i></span>   -->
-                                    <!-- John location. -->
-                                    <!-- <span class="small italic pull-right">50 mins</span> -->
-                                <!-- </a> -->
-                            <!-- </li> -->
                             <li>
                                 <a href="#">
                                     <span class="label label-danger"><i class="icon_book_alt"></i></span> 
@@ -62,16 +49,6 @@
                                     <span class="small italic pull-right">5</span>
                                 </a>
                             </li>
-                            <!-- <li> -->
-                                <!-- <a href="#"> -->
-                                    <!-- <span class="label label-success"><i class="icon_like"></i></span>  -->
-                                    <!-- Mick appreciated your work. -->
-                                    <!-- <span class="small italic pull-right"> Today</span> -->
-                                <!-- </a> -->
-                            <!-- </li>                             -->
-                            <!-- <li> -->
-                                <!-- <a href="#">See all notifications</a> -->
-                            <!-- </li> -->
                         </ul>
                     </li>
                     <!-- DEBUT NOTIFICATION UTILISATEUR  -->
@@ -97,86 +74,7 @@
                 </ul>
             </div>
       </header>      
-<!-- FIN ENTETE-->  
-
-<!-- DEBUT BARE DE NAVIGATION A GAUCHE-->  
-      <aside>
-          <div id="sidebar"  class="nav-collapse ">
-              <!-- sidebar menu start-->
-              <ul class="sidebar-menu">                
-                  <li class="active">
-                      <a class="" href="index.html">
-                          <i class="icon_house_alt"></i>
-                          <span>Accueil</span>
-                      </a>
-                  </li>
-     
-                  <li class="sub-menu">
-                      <a href="javascript:;" class="">
-                          <i class="icon_desktop"></i>
-                          <span>Planning</span>
-                          <span class="menu-arrow arrow_carrot-right"></span>
-                      </a>
-                      <ul class="sub">
-                          <li><a class="" href="GestionModelCalendrier.html">Modèles de calendrier</a></li>
-						  <li><a class="" href="AffichageModuleIndependant.html">Modules indépendants</a></li>
-                      </ul>
-                  </li>
-                  <li class="sub-menu">
-                      <a href="javascript:;" class="">
-                          <i class="icon_desktop"></i>
-                          <span>Paramétrage</span>
-                          <span class="menu-arrow arrow_carrot-right"></span>
-                      </a>
-                      <ul class="sub">
-						  <li><a class="" href="GestionEnchainementModules.html">Enchaînement modules</a></li>
-                          <li><a class="" href="Purge.html">Purge</a></li>
-                          <li><a class="" href="Historisation.html">Historisation</a></li>
-                      </ul>
-                  </li>     
-              </ul>
-          </div>
-      </header>      
-<!-- FIN ENTETE-->  
-
-<!-- DEBUT BARE DE NAVIGATION A GAUCHE-->  
-      <aside>
-          <div id="sidebar"  class="nav-collapse ">
-              <!-- sidebar menu start-->
-              <ul class="sidebar-menu">                
-                  <li class="active">
-                      <a class="" href="index.html">
-                          <i class="icon_house_alt"></i>
-                          <span>Accueil</span>
-                      </a>
-                  </li>
-     
-                  <li class="sub-menu">
-                      <a href="javascript:;" class="">
-                          <i class="icon_desktop"></i>
-                          <span>Planning</span>
-                          <span class="menu-arrow arrow_carrot-right"></span>
-                      </a>
-                      <ul class="sub">
-                          <li><a class="" href="GestionModelCalendrier.html">Modèles de calendrier</a></li>
-						  <li><a class="" href="AffichageModuleIndependant.html">Modules indépendants</a></li>
-                      </ul>
-                  </li>
-                  <li class="sub-menu">
-                      <a href="javascript:;" class="">
-                          <i class="icon_desktop"></i>
-                          <span>Paramétrage</span>
-                          <span class="menu-arrow arrow_carrot-right"></span>
-                      </a>
-                      <ul class="sub">
-                          <li><a class="" href="Purge.html">Purge</a></li>
-                          <li><a class="" href="Historisation.html">Historisation</a></li>
-                      </ul>
-                  </li>     
-              </ul>
-          </div>
-      </header>      
-<!-- FIN ENTETE-->  
+<!-- FIN ENTETE-->    
 
 <!-- DEBUT BARE DE NAVIGATION A GAUCHE-->  
       <aside>
@@ -234,52 +132,52 @@
                     <form class="form-horizontal form-label-left">
                       <!--//////   NOM   //////////-->
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Nom</label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
+                        <label class="control-label col-md-3 col-sm-12 col-xs-12">Nom</label>
+                        <div class="col-md-9 col-sm-12 col-xs-12">
                           <input type="text" class="form-control" value="FOLL">
                         </div>
                       </div>
                       <!--//////   Prenom   //////////-->
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Prénom</label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
+                        <label class="control-label col-md-3 col-sm-12 col-xs-12">Prénom</label>
+                        <div class="col-md-9 col-sm-12 col-xs-12">
                           <input type="text" class="form-control" value="Matthieu">
                         </div>
                       </div>
                       <!--//////   Entrprise   //////////-->
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Entreprise</label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
+                        <label class="control-label col-md-3 col-sm-12 col-xs-12">Entreprise</label>
+                        <div class="col-md-9 col-sm-12 col-xs-12">
                           <input type="text" class="form-control" value="Atos">
                         </div>
                       </div>
                       
                       <!--///////////// DATE DEBUT //////////-->
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Date Début contrat</label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
+                        <label class="control-label col-md-3 col-sm-12 col-xs-12">Date Début contrat</label>
+                        <div class="col-md-9 col-sm-12 col-xs-12">
                           <input type="text" class="form-control" value="15/09/2014">
                         </div>
                       </div>
                       <!--///////////// DATE FIN //////////-->
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Date Fin contrat</label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
+                        <label class="control-label col-md-3 col-sm-12 col-xs-12">Date Fin contrat</label>
+                        <div class="col-md-9 col-sm-12 col-xs-12">
                           <input type="text" class="form-control" value="18/08/2016 ">
                         </div>
                       </div>
 					  
 					  <!--///////////// DATE DEBUT //////////-->
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Date Début formation</label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
+                        <label class="control-label col-md-3 col-sm-12 col-xs-12">Date Début formation</label>
+                        <div class="col-md-9 col-sm-12 col-xs-12">
                           <input type="text" class="form-control" value="15/09/2014">
                         </div>
                       </div>
                       <!--///////////// DATE FIN //////////-->
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Date Fin formation</label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
+                        <label class="control-label col-md-3 col-sm-12 col-xs-12">Date Fin formation</label>
+                        <div class="col-md-9 col-sm-12 col-xs-12">
                           <input type="text" class="form-control" value="18/08/2016 ">
                         </div>
                       </div>
@@ -287,24 +185,24 @@
 
                       <!--//////   Nombre d'heure en formation   //////////-->
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Formation en centre</label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
+                        <label class="control-label col-md-3 col-sm-12 col-xs-12">Formation en centre</label>
+                        <div class="col-md-9 col-sm-12 col-xs-12">
                           <input type="text" class="form-control" value="987 heures">
                         </div>
                       </div>
 
                       <!--//////   Titre préparé   //////////-->
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Préparation au titre</label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
+                        <label class="control-label col-md-3 col-sm-12 col-xs-12">Préparation au titre</label>
+                        <div class="col-md-9 col-sm-12 col-xs-12">
                           <input type="text" class="form-control" value="Concepteur Développeur Informatiques">
                         </div>
                       </div>
 
                        <!--//////   Statut   //////////-->
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Statut</label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
+                        <label class="control-label col-md-3 col-sm-12 col-xs-12">Statut</label>
+                        <div class="col-md-9 col-sm-12 col-xs-12">
                           <select class="form-control">
                             <option>Validé</option>
 							<option>Invalidé</option>

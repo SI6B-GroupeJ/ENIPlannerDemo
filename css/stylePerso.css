@@ -1,5 +1,42 @@
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+	width: auto;
+  }
+  .form-horizontal .control-label {
+    text-align: left;
+	margin-bottom: 5px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+	width: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+	width: auto;
+  }
+}
+
+#logo {
+	float:left;
+	margin-top:5px;
+	margin-right:10px;
+}
+
+#sidebar ul > li > a .menu-arrow {
+    margin-top: 3px;
+}
+
 body{ 
     margin-top:40px; 
+}
+
+.breadcrumb {
+    background-color: #ffffff;
 }
 
 .stepwizard-step p {
